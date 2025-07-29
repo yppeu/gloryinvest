@@ -366,5 +366,10 @@
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-AOS.init();
+AOS.init({
+  duration: 600,  // 애니메이션 속도 (ms)
+  easing: 'ease-out-cubic', // 부드러운 느낌
+  offset: 80,     // 요소 등장 트리거 지점 조절
+  once: true      // 한 번만 실행되게 (스크롤 위로 다시 올라가도 재등장 안 함)
+});
 </script>
