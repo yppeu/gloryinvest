@@ -486,17 +486,20 @@ h6{
     width: 123px;
 }
 
-@media screen and (min-width:375px) and (max-width:500px){
+@media screen and (min-width:340px) and (max-width:500px){
     /* 공통 */
     .container-wrap{
         max-width: 85%;
         margin: 0 auto;
     } 
-    h2,h3,h4 {
+    h1,h4 {
         font-size: 40px;
     }
+    h2,h3 {
+        font-size: 36px;
+    }
     h5 {
-        font-size: 29px;
+        font-size: 26px;
     }
     .phone-opt-box {
         font-size: 13px;
@@ -516,9 +519,6 @@ h6{
     }
     .htxt > p{
         font-size: 9px;
-    }
-    h1{
-        font-size: 43px;
     }
     .hsubtxt-box{
         text-align: center;
@@ -567,18 +567,24 @@ h6{
     .mincome-txt > p:last-child,.price-txt > p:last-child{
         font-size: 14px;
     }
+    .job-input-box > input{
+      font-size: 11px;  
+    }
     .formBT > button{
-        font-size: 14px;
+        font-size: 12px;
     }
     .formBT >img{
         width: 25px;
     }
     .agree-box > label{
-        font-size: 14px;
+        font-size: 13px;
     }
     /* section06 */
     .sec06txt{
         font-size: 13px;
+    }
+    .review-txt-left > p:last-child, .review-txt-right > p:last-child{
+        font-size: 9px;
     }
 
 
