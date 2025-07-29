@@ -402,14 +402,22 @@ form{
     width: 26px;
 }
 .agree-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .agree-box > label{
     cursor: pointer;
     font-size: 15px;
 }
+.agree-box > input{
+    margin-right: 1px;
+}
 .agree-box > label > span{
     font-weight: 600;
+    margin-right: 6px;
 }
 
 /* .section06 */
@@ -515,7 +523,7 @@ h6{
 
     /* section01 */
     .htxt-img-box > img{
-        width: 100px;
+        width: 73px;
     }
     .htxt > p{
         font-size: 9px;
@@ -525,6 +533,7 @@ h6{
     }
     .hsubtxt-box>p:nth-child(1){
         display: inline-block;
+        font-size: 14px;
     }
     .hsubtxt-box>p:nth-child(3){
         font-size: 36px;
@@ -550,10 +559,10 @@ h6{
         margin-bottom: 0;
     }
     .in-box-txt > p:nth-child(3){
-        font-size: 12px;
+        font-size: 11px;
     }
     .in-box-img > img {
-        width: 46px;
+        width: 48px;
     }
     /* section04 */
     .benefit-img-box > img:last-child{
