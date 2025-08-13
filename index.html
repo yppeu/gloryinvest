@@ -10,9 +10,14 @@
 
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
+<div class="fixed-button">
+    <button>1분 안에 금리 · 한도 조회하기</button>
+    <img src="./img/icon-arr02.png" alt="">
+</div>
 <section class="section01">
     <div class="container-wrap">
         <div class="htxt">
@@ -26,12 +31,12 @@
             알아보기
         </h1>
         <div class="hsubtxt">
-            <div class="hsubtxt-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="hsubtxt-box" data-aos="fade-up" data-aos-delay="200">
                 <p>비대면간편신청</p>
                 <p>최대한도</p>
                 <p>1억원</p>
             </div>
-            <div class="hsubtxt-box" data-aos="fade-up" data-aos-delay="200"> 
+            <div class="hsubtxt-box" data-aos="fade-up" data-aos-delay="400"> 
                 <p>간편채무통합</p>
                 <p>간편한</p>
                 <p>채무통합</p> 
@@ -42,18 +47,18 @@
 
 <section class="section02">
     <div class="container-wrap">
-        <div class="ltxt-box" data-aos="fade-up" data-aos-delay="300">
+        <div class="ltxt-box" data-aos="fade-up" data-aos-delay="0">
             <h2>직장인 신용대출로<br>
                 <span class="span">3,000만원을</span><br>
                 빌린다면?
             </h2>
-            <div class="hashtag">
+            <div class="hashtag" data-aos="fade-right" data-aos-delay="1">
                 <span>정부지원대출</span>
                 <span>4대보험 가입 직장인</span><br>
                 <span>재직 3개월 이상</span>
             </div>
         </div>
-        <div class="rtxt-box" data-aos="fade-up" data-aos-delay="500">
+        <div class="rtxt-box" data-aos="fade-right" data-aos-delay="1">
             <p>매월 납부할 금액</p>
             <p>101,760원</p>
             <p>연 7.38% | 12개월 원리금균등분할<br>
@@ -65,11 +70,11 @@
 
 <section class="section03">
     <div class="container-wrap">
-        <h3 data-aos="fade-down" data-aos-delay="600">직장인 채무통합이<br>
+        <h3 data-aos="fade-down" data-aos-delay="0">직장인 채무통합이<br>
             왜 좋은가요?
         </h3>
         <div class="in-wrap">
-            <div class="in-box" data-aos="fade-down" data-aos-delay="700">
+            <div class="in-box" data-aos="fade-right" data-aos-delay="1">
                 <div class="in-box-txt">
                     <p>아무리 조회해도</p>
                     <p>안심조회</p>
@@ -81,7 +86,7 @@
                     <img src="./img/icon01.png" alt="">
                 </div>
             </div>
-            <div class="in-box" data-aos="fade-down" data-aos-delay="800">
+            <div class="in-box" data-aos="fade-right" data-aos-delay="1">
                 <div class="in-box-txt">
                     <p>한번에</p>
                     <p>빠른조회</p>
@@ -93,7 +98,7 @@
                     <img src="./img/icon02.png" alt="">
                 </div>
             </div>
-            <div class="in-box" data-aos="fade-down" data-aos-delay="900">
+            <div class="in-box" data-aos="fade-right" data-aos-delay="1">
                 <div class="in-box-txt">
                     <p>서류제출없이</p>
                     <p>간편조회</p>
@@ -111,18 +116,18 @@
 
 <section class="section04">
     <div class="container-wrap">
-        <h4 data-aos="fade-down" data-aos-delay="1000">직장인을 위한<br>
+        <h4 data-aos="fade-down" data-aos-delay="0">직장인을 위한<br>
             특별한 혜택
         </h4>
         <div class="benefit-wrap">
-            <div class="benefit-box" data-aos="fade-down" data-aos-delay="1100">
+            <div class="benefit-box" data-aos="fade-down" data-aos-delay="0">
                 <div class="benefit-img-box">
                     <img src="./img/icon04.png" alt="">
                     <img src="./img/icon04-2.png" alt="">
                 </div>
                 <span>대한민국 소비자 대상으로 더욱 빛나는</span>
             </div>
-            <div class="benefit-box" data-aos="fade-down" data-aos-delay="1200">
+            <div class="benefit-box" data-aos="fade-down" data-aos-delay="0">
                 <div class="benefit-img-box">
                     <img src="./img/icon05.png" alt="">
                 </div>
@@ -132,7 +137,7 @@
                     신청 시간에 따라 당일 승인도 가능
                 </P>
             </div>
-            <div class="benefit-box" data-aos="fade-down" data-aos-delay="1300">
+            <div class="benefit-box" data-aos="fade-down" data-aos-delay="0">
                 <div class="benefit-img-box">
                     <img src="./img/icon06.png" alt="">
                 </div>
@@ -147,25 +152,35 @@
 
 <section class="section05">
     <div class="container-wrap">
-        <h5 >1분내 금리·한도 조회하기</h5>
-        <p class="sec05txt" >한도 조회는 신용평점에 영향을 주지 않습니다.</p>
-        <form action="">
-            <div class="job-wrap">
-                <p>직업구분</p>
-                <div class="job-input-box">
-                    <input type="button" value="직장인" class="on"> 
-                    <input type="button" value="사업자"> 
-                    <input type="button" value="프리랜서"> 
-                    <input type="button" value="기타"> 
-                </div>
+        <h5>1분내 금리·한도 조회하기</h5>
+        <p class="sec05txt">한도 조회는 신용평점에 영향을 주지 않습니다.</p>
+        <form action="" id="loan-form">
+        <div class="job-wrap">
+            <p>직업구분</p>
+            <div class="job-input-box btn-radios four">
+                <input type="radio" id="job1" name="job" value="직장인" checked>
+                <label for="job1">직장인</label>
+
+                <input type="radio" id="job2" name="job" value="사업자">
+                <label for="job2">사업자</label>
+
+                <input type="radio" id="job3" name="job" value="프리랜서">
+                <label for="job3">프리랜서</label>
+
+                <input type="radio" id="job4" name="job" value="기타">
+                <label for="job4">기타</label>
             </div>
-            <div class="join-wrap">
-                <p>4대보험 가입여부</p>
-                <div class="join-input-box">
-                    <input type="button" value="가입" class="on">
-                    <input type="button" value="미가입">
-                </div>
-            </div> 
+        </div>
+        <div class="join-wrap">
+            <p>4대보험 가입여부</p>
+            <div class="join-input-box btn-radios two">
+                <input type="radio" id="join1" name="join" value="가입" checked>
+                <label for="join1">가입</label>
+
+                <input type="radio" id="join2" name="join" value="미가입">
+                <label for="join2">미가입</label>
+            </div>
+        </div>
             <div class="mincome-wrap">
                 <div class="mincome-txt">
                     <p>월 소득</p>
@@ -218,19 +233,20 @@
 <section class="section06">
     <div class="container-wrap">
         <div class="review-wrap">
-            <h6 data-aos="fade-up" data-aos-delay="1500">고객 감사 인터뷰</h6>
-            <p class="sec06txt" data-aos="fade-down" data-aos-delay="1600">직장인 착한 대출을 받으신 고객님의 감사 인터뷰입니다</p>
-            <div class="review-box" data-aos="fade-down" data-aos-delay="1700">
+            <h6 data-aos="fade-down" data-aos-delay="0">고객 감사 인터뷰</h6>
+            <p class="sec06txt" data-aos="fade-down" data-aos-delay="0">직장인 착한 대출을 받으신 고객님의 감사 인터뷰입니다</p>
+            <div class="review-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="./img/user-p.png" alt="">
                 <div class="review-txt-left">
                     <p>표** 님 (30대, 직장인)</p>
                     <p>채무가 여기저기 많아 매번 대출이 거절됐었는데요 ㅜ<br>
-                        담당자분이 여러군데 있던 채무도 통합해주고 금리도 그 전보다 낮게 해주셔서 조금 숨통이 트였습니다.<br>
+                        담당자분이 여러군데 있던 채무도 통합해주고 금리도<br> 
+                        그 전보다 낮게 해주셔서 조금 숨통이 트였습니다.<br>
                         너무너무 고마웠었어요
                     </p>
                 </div>
             </div>
-                <div class="review-box" data-aos="fade-down" data-aos-delay="1800">
+                <div class="review-box" data-aos="fade-up" data-aos-delay="0">
                     <div class="review-txt-right">
                         <p>김** 님 (20대, 회사원)</p>
                         <p>업무를 하는 중간에 자꾸 상담을 하게 되니 <br>
@@ -241,7 +257,7 @@
                     </div>
                 <img src="./img/user-k.png" alt="">
             </div>
-                <div class="review-box" data-aos="fade-down" data-aos-delay="1900">
+                <div class="review-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="./img/user-j.png" alt="">
                 <div class="review-txt-left">
                     <p>전** 님 (40대, 회사원)</p>
@@ -252,7 +268,7 @@
                     </p>
                 </div>
             </div>
-                <div class="review-box" data-aos="fade-down" data-aos-delay="2000">
+                <div class="review-box" data-aos="fade-up" data-aos-delay="0">
                     <div class="review-txt-right">
                         <p>손** 님 (40대, 직장인)</p>
                         <p>급할 때 마다 손쉽게 받았던 대출들이 어느 순간 돌려<br>
@@ -264,8 +280,11 @@
                 <img src="./img/user-s.png" alt="" class="brand">
             </div>
         </div>
-        <div class="brand-box" >
-            <img src="./img/brand.png" alt="">
+        <div class="brand-box" data-aos="fade-up" data-aos-delay="0">
+            <img src="./img/brand01.jpg" alt="">
+            <img src="./img/brand02.png" alt="">
+            <img src="./img/brand03.jpg" alt="">
+            <img src="./img/brand04.png" alt="">
         </div>
     </div>
 </section>
@@ -275,87 +294,155 @@
         <div class="fLogo-img-box">
             <img src="./img/fLogo.png" alt="">
         </div>
-        <p class="footer-txt01">대출모집법인 (주)글로리인베스트는 웰컴저축은행(주)과 1사 전속 대출모집계약을<br>
-            체결하고 저축은행 중앙회에 등록된 대출모집법인 입니다.
-        </p>
-        <div class="footer-box">
-            <p>▶  햇살론 근로소득자</p>
-            <p class="footer-txt02">⊙ 대출대상 : 만 20세 이상 최근 1년 이내 3개월 이상 근로중이며 소득증빙이 가능한 근로소득자
-                  단, 현 직장 1개월 이상 근로 및 급여수령 확인 필수
-                  1. 1개사 이상의 CSS 개인신용평점 하위 20/100인자 중 연간소득금액이 4천 5백만원 이하인 자
-               	    2. 연간소득금액이 3천 5백만원 이하인 자<br>
-            ⊙ 대출기간 : 3년 또는 5년<br>
-            ⊙ 대출금리 : 최대 연 9%~11% 이내<br>
-                   (매월 금융감독원에서 고시하는 금리에 따라 변동가능, 기준일자 매월 1일)<br>
-                                        금리적용방식 : 변동금리 (3, 6, 12개월 주기 선택)<br>
-            ⊙ 대출한도 : 1. 생계자금 2,000만원 이내 (신용평점별 차등적용)<br>
-            ⊙ 상환방법 : 원금균등분할상환<br>
-            ⊙ 이자납입방법 : 매월 후취<br> 
-            ⊙ 수 수 료 : 중도상환 및 취급수수료 없음 l 단, 신용보증재단 보증료(보증금액의 연 2.5% 이내)<br>
-            ⊙ 구비서류 : 공통서류 주민등록등본 및 원초본, 실명확인증표 사본(주민등록증 앞면, 운전면허증 <br>
-                                        등), 재직 및 근로소득 확인서류 (근로소득신고 여부 및 입사년도에 따라 상이)<br>
-                   구비서류 상세확인 : http://www.sunshineloan.or.kr<br>
-            ⊙ 연체금리 : 대출금리 + 3% 이내 (최대 연 14.5% 이내)<br>
-            ⊙ 자금용도 : 생계자금
+        <div class="footer-block">
+            <p>대출모집법인 (주)글로리인베스트는 웰컴저축은행(주)과 1사 전속 대출모집계약을 체결하고 저축은행 중앙회에 등록된 대출모집법인 입니다.</p>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title"><b>▶  햇살론 근로소득자</b></p>
+            <div class="footer-block__cont">
+                <dl class="footer-flex">
+                    <dt>⊙ 대출대상 :</dt>
+                    <dd>만 20세 이상 최근 1년 이내 3개월 이상 근로중이며 소득증빙이 가능한 근로자<br>
+                        단, 현 직장 1개월 이상 근로 및 급여수령 확인 필수<br>
+                        <div class="footer-desc">
+                        <p class="footer-desc__num">
+                            <span>1.</span>1개사 이상의 CSS 개인신용평점 하위 20/100인자 중 연간소득금액이 4천 5백만원 이하인 자<br>
+                        </p>
+                        <p class="footer-desc__num">
+                            <span>2.</span>연간소득금액이 3천 5백만원 이하인 자
+                        </p>
+                    </div>
+                    </dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출기간 :</dt>
+                    <dd>3년 또는 5년</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출금리 :</dt>
+                    <dd>최대 연 9%~11% 이내<br>
+                        (매월 금융감독원에서 고시하는 금리에 따라 변동가능, 기준일자 매월 1일)<br>
+                        금리적용방식 : 변동금리 (3, 6, 12개월 주기 선택)
+                    </dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출한도 :</dt>
+                    <dd>1. 생계자금 2,000만원 이내 (신용평점별 차등적용)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 상환방법 :</dt>
+                    <dd>원금균등분할상환</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 이자납입방법 :</dt>
+                    <dd>매월 후취</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 수 수 료 :</dt>
+                    <dd>중도상환 및 취급수수료 없음 l 단, 신용보증재단 보증료(보증금액의 연 2.5% 이내)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 구비서류 :</dt>
+                    <dd>공통서류 주민등록등본 및 원초본, 실명확인증표 사본(주민등록증 앞면, 운전면허증 등), 재직 및 근로소득 확인서류 (근로소득신고 여부 및 입사년도에 따라 상이)<br>
+                        구비서류 상세확인 : http://www.sunshineloan.or.kr
+                    </dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 연체금리 :</dt>
+                    <dd>대출금리 + 3% 이내 (최대 연 14.5% 이내)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 자금용도 :</dt>
+                    <dd>생계자금</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title"><b>▶  직장인 신용대출</b></p>
+            <div class="footer-block__cont">
+                <dl class="footer-flex">
+                    <dt>⊙ 대출대상 :</dt>
+                    <dd>만 20세 이상의 소득증빙이 가능한 일반인 (NICE 개인신용평점 300점 이상)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출기간 :</dt>
+                    <dd>6개월 ~ 7년 (6개월 단위계약)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출금리 :</dt>
+                    <dd>연 7.38% ~ 연 19.90% 이내 (개인신용평점 및 소득에 따라 차등 적용, 고정금리)<br>(기준일자 2025.04.10)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 대출한도 :</dt>
+                    <dd>최대 1억원 (개인신용평점 및 소득에 따라 차등 적용) / 단, 주부는 500만원</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 상환방법 :</dt>
+                    <dd>원리금균등분할상환방식</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 이자납입방법 :</dt>
+                    <dd>매월 후취</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 수수료 :</dt>
+                    <dd>취급수수료 없음 l 연장수수료 없음</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 중도상환수수료 :</dt>
+                    <dd>중도상환금액 x 중도상환수수료율 x (대출잔여기간 / 대출기간) * 1.33%<br>(대출취급일로부터 3년 이상 거래서 중도상환수수료 면제)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 구비서류 :</dt>
+                    <dd>소득증빙서류, 신분증</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 연체금리 :</dt>
+                    <dd>대출금리 + 3% 이내 (최대 연 19.9%)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 인지세 :</dt>
+                    <dd>대출금액별 차등 납부하며 각 50%씩 고객과 저축은행이 부담<br>5천만원 이하 : 비과세, 5천만원 초과 ~1억원 이하 : 7만원 (각각 3만 5천원)</dd>
+                </dl>
+                <dl class="footer-flex">
+                    <dt>⊙ 자금용도 :</dt>
+                    <dd>가계자금</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-block">
+            <p>웰컴저축은행 준법감시인 심의필 제5597호 (2025.06.24~2026.06.23)</p>
+        </div>
+        <div class="footer-block">
+            <p>웰컴저축은행 대출모집법인 ㈜글로리인베스트 | 사업자등록번호 477-81-00553
+                <br>경기도 고양시 일산동구 호수로 358-25, 619호(백석동, 동문타워 2)
+                <br>대표자 유찬심 | 저축은행 등록번호 20-00000002 | 전화 1666-7279
+                <br>웰컴저축은행 고객만족센터 1661-0001 
+                <br>신원확인방법 www.loan-consultant.or.kr | 금융감독원 1332
             </p>
         </div>
-        <div class="footer-box">
-            <p>▶  직장인 신용대출</p>
-            <p class="footer-txt03">
-            ⊙ 대출대상 : 만 20세 이상의 소득증빙이 가능한 일반인 (NICE 개인신용평점 300점 이상)<br>
-            ⊙ 대출기간 : 6개월 ~ 7년 (6개월 단위계약)<br>
-            ⊙ 대출금리 : 연 7.38% ~ 연 19.90% 이내 (개인신용평점 및 소득에 따라 차등 적용, 고정금리)<br>
-                  (기준일자 2025.04.10)<br>
-            ⊙ 대출한도 : 최대 1억원 (개인신용평점 및 소득에 따라 차등 적용) / 단, 주부는 500만원<br>
-            ⊙ 상환방법 : 원리금균등분할상환방식<br>
-            ⊙ 이자납입방법 : 매월 후취 <br>
-            ⊙ 수 수 료  : 취급수수료 없음 l 연장수수료 없음<br>
-            ⊙ 중도상환수수료 : 증도상환금액 x 중도상환수수료율 x (대출잔여기간 / 대출기간) * 1.33%<br>
-                          (대출취급일로부터 3년 이상 거래서 중도상환수수료 면제)<br>
-            ⊙ 구비서류 : 소득증빙서류, 신분증<br>
-            ⊙ 연체금리 : 대출금리 + 3% 이내 (최대 연 19.9%)<br>
-            ⊙ 인 지 세  :  대출금액별 차등 납부하며 각 50%씩 고객과 저축은행이 부담<br>
-                      5천만원 이하 : 비과세, 5천만원 초과 ~1억원 이하 : 7만원 (각각 3만 5천원)<br>
-            ⊙ 자금용도 : 가계자금
-            </p>
+        <div class="footer-block footer-block--close">
+            <p class="footer-block__item">⊙ 대출모집 업무의 대가로 웰컴저축은행으로부터 당사가 지급 받는 대출모집 수수료율은 웰컴저축은행 홈페이지 (www.welcomebank.co.kr)內 공지사항에서 확인하실 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 당사는 저축은행 중앙회에 정식등록된 대출모집법인으로 대출과 관련된 중개수수료를 받지 않습니다.</p>
+            <p class="footer-block__item">⊙ 대출중개를 빌미로 금전 및 수수료 요구는 불법행위이오니 주의 바랍니다.</p>
         </div>
-        <p class="footer-txt04">웰컴저축은행 준법감시인 심의필 제5597호 (2025.06.24~2026.06.23)</p>
-        <p>웰컴저축은행 대출모집법인 ㈜글로리인베스트 | 사업자등록번호 477-81-00553<br>
-            경기도 고양시 일산동구 호수로 358-25, 619호(백석동, 동문타워 2)<br>
-            대표자 유찬심 | 저축은행 등록번호 20-00000002 | 전화 1666-7279<br>
-            웰컴저축은행 고객만족센터 1661-0001 <br>
-            신원확인방법 www.loan-consultant.or.kr | 금융감독원 1332
-        </p><br>
-        <p class="footer-txt05">⊙ 대출모집 업무의 대가로 웰컴저축은행으로부터 당사가 지급 받는 대출모집 수수료율은<br>
-        웰컴저축은행 홈페이지 (www.welcomebank.co.kr)內 공지사항에서 확인하실 수 있습니다.<br>
-            ⊙ 당사는 저축은행 중앙회에 정식등록된 대출모집법인으로 대출과 관련된 중개수수료를 받지<br>
-                않습니다. <br>
-            ⊙ 대출중개를 빌미로 금전 및 수수료 요구는 불법행위이오니 주의 바랍니다.
-        </p>
-        <div class="footer-box">
-            <p>▶  유의사항</p>
-            <p>
-                ⊙ 내부등급 및 연체이력 등에 따라 대출 취급이 불가할 수 있으며, 개인신용평점 및 심사기준에<br>
-                    따라 대출이 제한될 수 있습니다.<br>
-                ⊙ 본 상품은 근저당 설정 시 설정비용은 웰컴저축은행에서 부담하나, 해지 비용은 고객 부담입니다.<br>
-                ⊙ 계약 체결 전 상품설명서 및 약관을 확인하시기 바랍니다.<br>
-                ⊙ 해당 상품에 대해 충분한 사전 설명을 받을 권리가 있으며, 설명을 이해한 후 거래하시기 바랍니다.<br>
-                ⊙ 과도한 대출은 개인신용평점 하락의 원인이 될 수 있습니다.<br>
-                ⊙ 개인신용평점 하락으로 금융거래의 제약 또는 불이익이 발생할 수 있습니다.<br>
-                ⊙ 연체 시 계약기한 만료 전 원리금 변제 의무가 발생할 수 있습니다.<br>
-                ⊙ 기타 자세한 내용은 고객센터(1661-0001)로 문의하시기 바랍니다.<br>
-                ⊙ 금융소비자는 방문판매 목적으로 방문 또는 전화 연락하는 것을 금지하도록 요구할 수 있습니다. <br>
-                ⊙ 담당 방문판매인력에게 연락(☎02-1666-7279)하거나 두낫콜 홈페이지 <br>
-                    (www.donotcall.or.kr)에 접속하시면 신청 및 철회가 가능합니다. <br>
-                ⊙ 금융상품의 계약체결 권한은 웰컴저축은행(주)이 가지고 있습니다.<br>
-                ⊙ 금융소비자보호법 제44조와 제45조에 따라 금융상품 직접판매업자인 웰컴저축은행(주) 및<br>
-                    금융상품 판매대리 중개업자인 (주)글로리인베스트에 손해배상을 청구할 수 있습니다.<br>
-                ⊙ 본 서비스 이용을 위해 소비자가 입력한 개인정보와 신용정보는 금융상품 직접판매업자인<br>
-                    웰컴저축은행(주)이 보유 및 관리합니다.<br>
-                ⊙ 방문 판매/ 전화권유 판매인력 신원확인이 가능하며, 아래 주소를 통해 조회하시기 바랍니다.<br>
-                    https://dsr.welcomesb.co.kr/ib20/mnu/LCSSCH000000?ib20 media=MDA00001
-
-            </p>
+        <div class="footer-block">
+            <p class="footer-block__title"><b>▶  유의사항</b></p>
+            <p class="footer-block__item">⊙ 내부등급 및 연체이력 등에 따라 대출 취급이 불가할 수 있으며, 개인신용평점 및 심사기준에 따라 대출이 제한될 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 본 상품은 근저당 설정 시 설정비용은 웰컴저축은행에서 부담하나, 해지 비용은 고객 부담입니다.</p>
+            <p class="footer-block__item">⊙ 계약 체결 전 상품설명서 및 약관을 확인하시기 바랍니다.</p>
+            <p class="footer-block__item">⊙ 해당 상품에 대해 충분한 사전 설명을 받을 권리가 있으며, 설명을 이해한 후 거래하시기 바랍니다.</p>
+            <p class="footer-block__item">⊙ 과도한 대출은 개인신용평점 하락의 원인이 될 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 개인신용평점 하락으로 금융거래의 제약 또는 불이익이 발생할 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 연체 시 계약기한 만료 전 원리금 변제 의무가 발생할 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 기타 자세한 내용은 고객센터(1661-0001)로 문의하시기 바랍니다.</p>
+            <p class="footer-block__item">⊙ 금융소비자는 방문판매 목적으로 방문 또는 전화 연락하는 것을 금지하도록 요구할 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 담당 방문판매인력에게 연락(☎02-1666-7279)하거나 두낫콜 홈페이지 (www.donotcall.or.kr)에 접속하시면 신청 및 철회가 가능합니다.</p>
+            <p class="footer-block__item">⊙ 금융상품의 계약체결 권한은 웰컴저축은행(주)이 가지고 있습니다.</p>
+            <p class="footer-block__item">⊙ 금융소비자보호법 제44조와 제45조에 따라 금융상품 직접판매업자인 웰컴저축은행(주) 및 금융상품 판매대리 중개업자인 (주)글로리인베스트에 손해배상을 청구할 수 있습니다.</p>
+            <p class="footer-block__item">⊙ 본 서비스 이용을 위해 소비자가 입력한 개인정보와 신용정보는 금융상품 직접판매업자인 웰컴저축은행(주)이 보유 및 관리합니다.</p>
+            <p class="footer-block__item">⊙ 방문 판매/ 전화권유 판매인력 신원확인이 가능하며, 아래 주소를 통해 조회하시기 바랍니다.
+                <br/>https://dsr.welcomesb.co.kr/ib20/mnu/LCSSCH000000?ib20media=MDA00001</p>
         </div>
     </div>
 </footer>
@@ -363,13 +450,36 @@
 </html>
 
 
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 <script>
+const offsetPosition = window.innerHeight * 0.2;
 AOS.init({
   duration: 600,  // 애니메이션 속도 (ms)
   easing: 'ease-out-cubic', // 부드러운 느낌
-  offset: 80,     // 요소 등장 트리거 지점 조절
-  once: true      // 한 번만 실행되게 (스크롤 위로 다시 올라가도 재등장 안 함)
+  offset: offsetPosition,     // 요소 등장 트리거 지점 조절
+  once: false      // 한 번만 실행되게 (스크롤 위로 다시 올라가도 재등장 안 함)
+});
+
+    // 공통 함수: 버튼 클릭 시 on 클래스 토글
+    function toggleButtonGroup(selector) {
+        const buttons = document.querySelectorAll(selector);
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('on'));
+                btn.classList.add('on');
+            });
+        });
+    }
+
+    // 직업구분 버튼에 적용
+    toggleButtonGroup('.job-input-box input[type="button"]');
+
+    // 4대보험 가입여부 버튼에 적용
+    toggleButtonGroup('.join-input-box input[type="button"]');
+
+    document.querySelector('.fixed-button').addEventListener('click', function() {
+    document.querySelector('#loan-form').scrollIntoView({
+        behavior: 'smooth'
+    });
 });
 </script>
