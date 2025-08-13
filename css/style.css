@@ -443,14 +443,6 @@ form {
   border-color:#526bab;
 }
 
-/* 키보드 포커스 */
-.btn-radios input[type="radio"]:focus + label{
-  outline:2px solid #ffb100;
-  outline-offset:2px;
-}
-
-
-
 
 .mincome-txt,
 .price-txt {
