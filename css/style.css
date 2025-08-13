@@ -397,7 +397,7 @@ form {
 }
 
 
-/* 공통 라디오 그룹(직업/가입여부) */
+/* 공통 라디오(직업/가입여부) */
 .btn-radios{ 
     display:flex; 
     gap:3px; 
@@ -405,11 +405,13 @@ form {
 }
 
 .btn-radios.four > label { 
-    flex:1 1 calc(25% - 10px); }
+    flex:1 1 calc(25% - 10px); 
+}
 .btn-radios.two  > label { 
-    flex:1 1 calc(50% - 10px); }
+    flex:1 1 calc(50% - 10px); 
+}
 
-/* 라디오 숨기기(공간 차지 X) */
+/* 라디오 숨기기 */
 .btn-radios input[type="radio"]{
   position:absolute;
   opacity:0;
